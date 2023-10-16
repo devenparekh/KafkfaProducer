@@ -13,8 +13,7 @@ Steps to setup zookeeper:
 zkserver will start the zookeeper on the defualt port which is 2181, you can change the default port in zoo.cfg file
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 Steps to setup Kafka Server:
-1) Extract kafka in a folder without spaces or you will get following error when running the .bat file for server: Error: Could not find or load main class files\kafka_2.12-2.4.0\libs\activation-1.1.1.jar;
-
+1) Extract kafka in a folder without spaces or you will get following error when running the .bat file for server: Error: Could not find or load main class files\kafka_2.12-2.4.0\libs\activation-1.1.1.jar
 2)Go to config folder in Apache Kafka and edit “server.properties”
 3)Find log.dirs and replace after “=/tmp/kafka-logs” to “=C:\\your workdir\\kafka_2.10–0.10.1.1\\kafka-logs” (change your version number).
 4)Leave other setting as is. If your Apache Zookeeper on different server then change the “zookeeper.connect” property.
